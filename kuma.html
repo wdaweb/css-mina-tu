@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊本熊</title>
+    <style>
+        .bear {
+            background: #000;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bear::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: white;
+            border: 40px solid #000;
+        }
+
+        .bear::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: white;
+            border: 40px solid #000;
+            left: 41%;
+            top: 3%;
+            transform: translate(86%, -12%);
+        }
+
+        .eye {
+            background: #000000;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            /* transform: translate(50%, -100%); */
+            /* position: relative; */
+        }
+
+        .eye::before {
+            content: "";
+            background: rgb(0, 0, 0);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            border: 20px solid #ffffff;
+            left: 30%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+        }
+
+        .eye::after {
+            content: "";
+            background: rgb(0, 0, 0);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            border: 20px solid #ffffff;
+            left: 70%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+        }
+        .red {
+            background: #000000;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          
+        }
+
+        .red::before {
+            content: "";
+            background: rgb(193, 0, 0);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+           
+            left: 30%;
+            top: 63%;
+            transform: translate(-149%, -50%);
+        }
+
+        .red::after {
+            content: "";
+            background: rgb(193, 0, 0);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            
+            left: 94%;
+            top: 61%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mouse {
+            background: #ffffff;
+            width: 250px;
+            height: 183px;
+            border-radius: 50%;
+            
+            left: 50%;
+            top: 50%;
+            transform: translate(70%, 142%);
+          
+        }
+
+        .mouse::before {
+            content: "";
+            background: rgb(0, 0, 0);
+            width: 50px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+           
+            left: 50%;
+            top: 53%;
+            transform: translate(-48%, -288%);
+        }
+
+        .mouse::after {
+            content: "";
+            background: rgb(160, 6, 6);
+            width: 111px;
+            height:56px;
+            border-radius: 50%;
+            position: absolute;
+            
+            left: 50%;
+            top: 50%;
+            transform: translate(-47%, -29%);
+        }
+        .body {
+  width: 31px;
+  height: 66px;
+  background-color: rgb(247, 247, 247);
+  transform: skew(45deg); /* 傾斜效果 */
+  position: absolute; /* 絕對定位 */
+  top: 213px; /* 上邊距 */
+  left: 87px; /* 左邊距 */
+}
+
+.body::before {
+  content: "";
+  width: 31px;
+  height: 66px;
+  background-color: rgb(255, 255, 255);
+  transform: skew(-64deg); /* 傾斜效果 */
+  position: absolute; /* 絕對定位 */
+  top: 0px; /* 上邊距 */
+  left: 68px; /* 左邊距 */
+}
+
+ 
+          
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="bear">
+
+        <div class="eye">
+            <div class="red">
+                <div class="mouse">
+                    <div class="body"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
